@@ -1,4 +1,5 @@
-In this study, we utilized several R packages for data analysis and processing. Below are the details of the R packages and their corresponding versions:
+In this study, both single-cell RNA sequencing and spatial transcriptomics data were analyzed using the standard Seurat workflow.
+we utilized several R packages for data analysis and processing. Below are the details of the R packages and their corresponding versions:
 | Package          | Version  | Package            | Version    | Package              | Version   | Package          | Version  | Package              | Version    | Package              | Version    |
 | ---------------- | -------- | ------------------ | ---------- | -------------------- | --------- | ---------------- | -------- | -------------------- | ---------- | -------------------- | ---------- |
 | abind            | 1.4-8    | ALL                | 1.48.0     | annotate             | 1.84.0    | AnnotationDbi    | 1.68.0   | ape                  | 5.8-1      | aplot                | 0.2.5      |
