@@ -24,10 +24,10 @@ def prepare_data(df, data_type="imc_all_vars"):
         fibroblast_vars = [col for col in df.columns if "fibroblast" in col.lower()]
         fibroblast_vars = [col for col in fibroblast_vars if re.search("|".join(search_patterns), col.lower())]
 
-        custom_vars = ["cd11chimφ_hladrhimφ", "hladrhimφ_cd11chimφ"]
-        general_vars = ["collagen1", "pdl1", "pan.keratin", "cd68", "cd45", "cd11c", "hladr"]
+        # custom_vars = ["cd11chimφ_hladrhimφ", "hladrhimφ_cd11chimφ"]
+        # general_vars = ["collagen1", "pdl1", "pan.keratin", "cd68", "cd45", "cd11c", "hladr"]
 
-        var_names = epithelial_vars + fibroblast_vars + custom_vars + general_vars
+        var_names = epithelial_vars + fibroblast_vars #+ custom_vars + general_vars
         var_names = [v for v in var_names if v in df.columns]
         if len(var_names) == 0:
             raise ValueError("no valid columns found for imc_filter_vars")
